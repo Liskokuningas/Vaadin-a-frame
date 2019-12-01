@@ -4,7 +4,7 @@
     <groupId>com.tsc.aframe</groupId>
     <artifactId>aframe</artifactId>
     <version>1.0.0</version>
-    <name>vaadin-a-frame</name>
+    <name>a-frame-vaadin</name>
     <description>Integration of A-Frame for Vaadin platform</description>
 
     <properties>
