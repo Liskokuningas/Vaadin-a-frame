@@ -3,6 +3,8 @@
 Vaadin 14 Java integration of @aframevr/aframe.
 This addon wraps the most common elements of the A-Frame Framework for Java usage in Vaadin.
 
+You can find the addon from [Vaadin directory](https://vaadin.com/directory/component/a-frame-vaadin).
+
 ## You can see more about A-frame from
 [Homepage](https://aframe.io/)
 
