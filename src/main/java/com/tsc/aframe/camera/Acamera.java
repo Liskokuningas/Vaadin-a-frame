@@ -10,7 +10,7 @@ import com.vaadin.flow.component.dependency.NpmPackage;
 @Tag("a-camera")
 @JsModule("aframe/dist/aframe-v0.9.2.min.js")
 @NpmPackage(value = "aframe", version = "^0.9.2")
-public class Acamera extends AFrameBase implements IAframeBase {
+public class Acamera extends AFrameBase {
 	
 	public Acamera() {
 		super();

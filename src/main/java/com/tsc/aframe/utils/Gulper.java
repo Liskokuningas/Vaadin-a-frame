@@ -14,6 +14,7 @@ import com.tsc.aframe.assets.Video;
 import com.tsc.aframe.base.AFrameBase;
 import com.tsc.aframe.camera.Acamera;
 import com.tsc.aframe.camera.Acursor;
+import com.tsc.aframe.camera.Amarkercamera;
 import com.tsc.aframe.primitives.Abox;
 import com.tsc.aframe.primitives.Acircle;
 import com.tsc.aframe.primitives.Acone;
@@ -240,6 +241,9 @@ public class Gulper {
 		case "a-sound":
 			returnObj = new Asound(xmlString);
 			break;
+		case "a-marker-camera":
+			returnObj = new Amarkercamera(xmlString);
+			break;			
 		default:
 			break;
 		}
