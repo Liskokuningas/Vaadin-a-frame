@@ -9,6 +9,8 @@ import com.tsc.aframe.camera.Acursor;
 import com.tsc.aframe.primitives.*;
 import com.tsc.aframe.utils.Gulper;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.dependency.JavaScript;
+import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
@@ -19,6 +21,7 @@ import com.vaadin.flow.dom.Element;
 import com.vaadin.flow.router.Route;
 
 @Route("")
+@JavaScript("https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js")
 public class View extends Div {
 	
 	Acamera camera1 = null;
@@ -56,10 +59,19 @@ public class View extends Div {
 	
     public View() {
     	Ascene ascene = new Ascene();
+    	/*
+    	ascene.setEmbedded("");
+    	ascene.getElement().getStyle().set("height", "500px");
+    	ascene.getElement().getStyle().set("width", "500px");
+    	ascene.setAttribute("arjs", "");
+    	*/
     	add(ascene);
     	
-    	//aCamera.setWasdcontrolsenabled("false");
+    	ascene.addXml("<a-box color=\"green\" position=\"0 2 -5\" material=\"opacity: 0.5;\"></a-box>");
+    	//ascene.addXml("<a-marker-camera preset=\"hiro\"></a-marker-camera>");
     	
+    	//aCamera.setWasdcontrolsenabled("false");
+    	/*
     	assets1 = (Aassets) ascene.addXml("<a-assets></a-assets>");    	
     	img1 = (Img) assets1.addXml("<img id=\"my-image\" src=\"https://i.imgur.com/mYmmbrp.jpg\" crossorigin=\"anonymous\"/>");
     	assetitem1 = (Aassetitem) assets1.addXml("<a-asset-item id=\"gltf-item\" src=\"https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf\" />");
@@ -95,6 +107,6 @@ public class View extends Div {
     	triangle1 = (Atriangle) ascene.addXml("<a-triangle position=\"13 2 -5\" color=\"#6a9c52\" vertex-c=\"1 -1 0\"></a-triangle>");
     	video1 = (Avideo) ascene.addXml("<a-video src=\"#penguin-sledding\" width=\"5.3\" height=\"3\" position=\"13 2 -10\"></a-video>");
     	//videosphere1 = (Avideosphere) ascene.addXml("<a-videosphere src=\"#penguin-sledding\"></a-videosphere>");
-    	
+    	*/
     }
 }
