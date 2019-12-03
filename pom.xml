@@ -5,7 +5,7 @@
     <artifactId>aframe</artifactId>
     <version>1.0.1</version>
     <name>aframe</name>
-    <description>Integration of paper-slider for Vaadin platform</description>
+    <description>Integration of A-Frame for Vaadin</description>
 
     <properties>
         <vaadin.version>14.0.13</vaadin.version>
