@@ -6,8 +6,8 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 
 @Tag("a-asset-item")
-@JsModule("aframe/dist/aframe-v0.9.2.min.js")
-@NpmPackage(value = "aframe", version = "^0.9.2")
+@JsModule("aframe/dist/aframe-v1.0.0.min.js")
+@NpmPackage(value = "aframe", version = "^1.0.0")
 public class Aassetitem extends AFrameBase {
 	public Aassetitem() {
 		super();
