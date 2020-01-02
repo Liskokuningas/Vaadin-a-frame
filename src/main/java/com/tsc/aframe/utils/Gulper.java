@@ -121,6 +121,21 @@ public class Gulper {
         return null;
     }
 	
+	public static String getNodeName( String xmlString ) {
+		String nodeName = "unknown";	
+		
+		Document document = convertStringToXMLDocument(xmlString);
+		
+	    if ( document != null ) {
+	    	//Normalize the XML Structure; It's just too important !!
+		    document.getDocumentElement().normalize();		       
+		    //Here comes the root node
+		    nodeName = document.getDocumentElement().getNodeName();
+	    }
+	    
+		return nodeName;    		
+	}
+	
 	public static AFrameBase aFrameFactory( String xmlString ) {
 		
 		// Get root name

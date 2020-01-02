@@ -10,7 +10,7 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 
 @Tag("a-sky")
-@JsModule("aframe/dist/aframe-v1.0.0.min.js")
+@JsModule("aframe/dist/aframe-v1.0.3.min.js")
 @NpmPackage(value = "aframe", version = "^1.0.0")
 /*
  If you wish to include your own JS modules in the add-on jar, add the module

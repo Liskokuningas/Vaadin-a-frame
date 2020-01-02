@@ -42,7 +42,7 @@ public class AFrameBase extends Component implements IAframeBase {
 		AFrameBase aFrameBaseObj = Gulper.aFrameFactory(elementXml);
 		if ( aFrameBaseObj != null ) {
 			this.add(aFrameBaseObj);
-		}
+		}		
 		return aFrameBaseObj;
 	}
 }
