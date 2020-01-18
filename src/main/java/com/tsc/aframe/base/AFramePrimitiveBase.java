@@ -28,6 +28,7 @@ public class AFramePrimitiveBase extends AFrameBase {
 		attributesMap.put("env-map", "envmap");
 		attributesMap.put("fog", "fog");
 		attributesMap.put("height", "height");
+		attributesMap.put("material", "material");
 		attributesMap.put("metalness", "metalness");
 		attributesMap.put("normal-map", "normalmap");
 		attributesMap.put("normal-scale", "normalscale");
@@ -136,8 +137,13 @@ public class AFramePrimitiveBase extends AFrameBase {
 	public void setHeight(String height) {
 		this.getElement().setAttribute( "height" ,height );
 	}
-	public String getMetalness() {
-		
+	public String getMaterial() {		
+		return this.getElement().getAttribute( "material" );
+	}
+	public void setMaterial(String material) {
+		this.getElement().setAttribute( "material" ,material );
+	}
+	public String getMetalness() {		
 		return this.getElement().getAttribute( "metalness" );
 	}
 	public void setMetalness(String metalness) {
