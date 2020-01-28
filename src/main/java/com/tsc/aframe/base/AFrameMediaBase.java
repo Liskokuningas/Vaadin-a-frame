@@ -18,7 +18,8 @@ public class AFrameMediaBase extends AFrameBase {
 		attributesMap.put("color", "color");
 		attributesMap.put("height", "height");
 		attributesMap.put("metalness", "metalness");
-		attributesMap.put("opacity", "opacity");		
+		attributesMap.put("opacity", "opacity");
+		attributesMap.put("position", "position");
 		attributesMap.put("repeat", "repeat");
 		attributesMap.put("roughness", "roughness");
 		attributesMap.put("segments-height", "segmentsheight");
